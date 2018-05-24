@@ -716,18 +716,27 @@ form.create-new-topic-form {
 .about p {
   color: #fff; }
 
-.topic-list th {
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
-  font-family: 'SlimPlay', sans-serif; }
-
-.topic-list td {
-  text-align: center;
-  padding: 10px;
-  font-size: 15px; }
-  .topic-list td .title, .topic-list td .discourse-tags {
+.topic-list {
+  width: 100%; }
+  .topic-list th {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'SlimPlay', sans-serif;
+    border-bottom: 1px solid #225A94; }
+  .topic-list thead td:first-child, .topic-list thead th:first-child,
+  .topic-list tbody td:first-child,
+  .topic-list tbody th:first-child {
     text-align: left; }
+  .topic-list td {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 15px; }
+    .topic-list td .title, .topic-list td .discourse-tags {
+      text-align: left; }
+  .topic-list .topic-post-badges {
+    color: green;
+    font-weight: bold; }
 
 .input-group {
   margin: 5px 0 22px; }

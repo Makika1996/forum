@@ -1,19 +1,36 @@
 .topic-list {
+  width: 100%;
+
   th {
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
     font-family: 'SlimPlay', sans-serif;
+    border-bottom: 1px solid $endeavour;
+  }
+
+  thead,
+  tbody {
+    td, th {
+      &:first-child {
+        text-align: left;
+      }
+    }
   }
 
   td {
     text-align: center;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 15px;
 
     .title, .discourse-tags {
       text-align: left;
     }
+  }
 
+
+  .topic-post-badges {
+    color: green;
+    font-weight: bold;
   }
 }
