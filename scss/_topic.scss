@@ -1,0 +1,19 @@
+.topic-list {
+  th {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'SlimPlay', sans-serif;
+  }
+
+  td {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+
+    .title, .discourse-tags {
+      text-align: left;
+    }
+
+  }
+}

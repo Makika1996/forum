@@ -1,0 +1,31 @@
+.login.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: none;
+}
+
+.register-login-wrap {
+  display: flex;
+  background: $white;
+
+  //select only childs
+  > div {
+    flex: 1;
+    padding: 20px 30px;
+  }
+}
+
+.registerbtn {
+  background-color: $endeavour;
+  color: $white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,79 @@
+.nav-wrap {
+  overflow: auto;
+  margin: 0 auto;
+  background: $endeavour;
+  border-bottom: 5px solid $curiousBlue;
+
+  .container {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background: none;
+    flex-wrap: wrap;
+
+    .nav-open-link {
+      i {
+        color: $white;
+        font-size: 30px;
+      }
+      @include mq(from768) {
+        display: none;
+      }
+    }
+  }
+}
+
+#fancy-nav {
+  position: relative;
+
+
+  &.opened {
+    display: block;
+  }
+
+  @include mq(to768) {
+    display: none;
+    width: 100%;
+  }
+
+  li {
+    list-style: none;
+    float: left;
+
+    &.active {
+      a {
+        color: $white;
+      }
+    }
+
+    a {
+      position: relative;
+      z-index: 200;
+      color: $white;
+      font-size: 15px;
+      font-weight: 400;
+      display: block;
+      float: left;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0.6em 1em 0.3em;
+      font-family: 'SlimPlay', sans-serif;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  #magic-line-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100% !important;
+    width: 100px;
+    background-color: $curiousBlue;
+    z-index: 100;
+    border-radius: 5px 5px 0 0;
+  }
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Forum</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body background="images/ps4.png">
+
+  <div class="nav-wrap">
+    <div class="container">
+      <a href="">Logo</a>
+      <a class="nav-open-link" href="javascript:;"><i class="fas fa-bars"></i></a>
+      <ul class="group" id="fancy-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="forum.html">Forum</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="bgWhite">
+      <div class="forum-head">
+        <div class="forum-head--left">
+          <select>
+            <option>all categories</option>
+            <option value="gaming">Gaming</option>
+            <option value="gamesharing">Gamesharing</option>
+            <option value="GT">Guides & Tutorials</option>
+            <option value="tech">Tech</option>
+            <option value="ads">Ads</option>
+            <option value="ucategorized">Uncategorized</option>
+          </select>
+
+          <button type="button" name="latest">Latest</button>
+          <button type="button" name="categories">Categories</button>
+          <button type="button" name="new">New</button>
+          <button type="button" name="top">Top</button>
+          <button type="button" name="unread">Unread</button>
+        </div>
+        <div class="forum-head--right">
+          <button class="crete-new-topic last" type="button" name="new">+ new topic</button>
+        </div>
+      </div>
+    </div>
+
+    <form class="create-new-topic-form bgWhite" action="index.html" method="post">
+      <input type="text" name="title" placeholder="Type title">
+      <div class="selects-cat-tag">
+        <select multiple class="categories" name="categories">
+          <option value="none">All categories</option>
+          <option value="gaming">Gaming</option>
+          <option value="gamesharing">Gamesharing</option>
+          <option value="GT">Guides & Tutorials</option>
+          <option value="tech">Tech</option>
+          <option value="ads">Ads</option>
+          <option value="ucategorized">Uncategorized</option>
+        </select>
+        <select multiple class="tags" name="tags">
+          <option value="none">None</option>
+          <option value="gaming">Gaming</option>
+          <option value="gamesharing">Gamessharing</option>
+          <option value="GT">Guides & Tutorials</option>
+          <option value="tech">Tech</option>
+          <option value="ads">Ads</option>
+          <option value="ucategorized">Uncategorized</option>
+          <option value="gaming">Gaming</option>
+          <option value="gamesharing">Gamesharing</option>
+          <option value="GT">Guides & Tutorials</option>
+          <option value="gamesharing">Gamesharing</option>
+          <option value="GT">Guides & Tutorials</option>
+
+        </select>
+      </div>
+      <textarea name="topic-body" rows="8" placeholder="Type here"></textarea>
+      <button type="submit" name="create-topic">+ create topic</button>
+      <button class="create-new-topic-form-cancel" type="button" name="cancel">cancel</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="bgWhite">
+      <table class="topic-list">
+        <thead>
+          <tr>
+            <th data-sort-order="default" class="default">Topic</th>
+            <th data-sort-order="posters" class="posters">Users</th>
+            <th data-sort-order="posts" class="posts sortable num">Replies</th>
+            <th data-sort-order="view" class="views sortable num">Views</th>
+            <th data-sort-order="activity" class="activity sortable num">Activity</th>
+          </tr>
+          <tbody>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+            <tr class="topic-list-item">
+              <td class="main-link clearfix" colspan="1">
+                <span class="link-top-line">
+                  <a href="#" class="title raw-link raw-topic-link">Playstation 4 Rezime - diskusija, info, slike, video - Vol. 3</a>
+                  <span class="topic-post-badges"></span>
+                  <div class="discourse-tags">
+                    <a href="#" class="tag-sony discourse-tag box">Sony</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4</a>
+                    <a href="#" class="tag-sony discourse-tag box">ps4_pro</a>
+                  </div>
+                </span>
+              </td>
+              <td class="posters">
+                <a href="#" data-user-card="predator" class=" group-PSC">
+                  <img width="25" height="25" src="https://www.fillmurray.com/25/25">
+                </a>
+              </td>
+              <td class="topic-number-relies">
+                25
+              </td>
+              <td class="topic-number-views">
+                500
+              </td>
+              <td class="topic-number-activity">
+                25m
+              </td>
+            </tr>
+          </tbody>
+        </thead>
+      </table>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+</body>
+
+</html>

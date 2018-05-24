@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin-top: 20px !important;
+  margin: 0 auto;
+}
+
+.bgWhite {
+  background: $white;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}

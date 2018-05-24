@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Forum</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body background="images/ps4.png">
+
+  <div class="nav-wrap">
+    <div class="container">
+      <a href="">Logo</a>
+      <a class="nav-open-link" href="javascript:;"><i class="fas fa-bars"></i></a>
+      <ul class="group" id="fancy-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="forum.html">Forum</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container login">
+    <div class="register-login-wrap">
+      <div class="register">
+        <form class="register" action="index.html">
+          <div class="form-heading">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account</p>
+            <hr>
+          </div>
+          <div class="input-group">
+            <label for="fname">First Name</label>
+            <input id="fname" type="text" placeholder="Enter First Name" name="fname" required>
+          </div>
+          <div class="input-group">
+            <label for="sname">Surname</label>
+            <input type="text" placeholder="Enter Surname" name="sname" required>
+          </div>
+          <div class="input-group input-radio">
+            <label for="gender">Choose</label>
+            <label><input id="male" type="radio" name="gender" value="male">Male</label>
+            <label><input id="female" type="radio" name="gender" value="female">Female</label>
+          </div>
+          <div class="input-group">
+            <label for="uname">Username</label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+          </div>
+          <div class="input-group">
+            <label for="psw">Password</label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+          </div>
+          <div class="input-group">
+            <label for="psw-repeat"></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          </div>
+          <button type="submit" class="registerbtn">Register</button>
+
+        </form>
+      </div>
+
+      <div class="login">
+        <form>
+          <div class="form-heading">
+            <h1>Log In</h1>
+            <p>If u have an account please log in.</p>
+            <hr>
+          </div>
+          <div class="input-group">
+            <label for="uname">Username</label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+          </div>
+          <div class="input-group">
+            <label for="psw">Password</label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+          </div>
+
+          <button type="submit" class="registerbtn">Log In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+.news {
+  font-size: 0;
+}
+
+article {
+  max-width: calc(100% / 3 - 14px);
+  overflow: hidden;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: $white;
+  border-bottom: 10px solid darken($curiousBlue, 10%);
+  border-radius: 3px;
+  position: relative;
+  display: inline-block;
+
+  @include mq(to768) {
+    max-width: calc(100% / 2 - 10px);
+  }
+
+  @include mq(to550) {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  &:nth-child(3n) {
+    @include mq(from768) {
+      margin-right: 0;
+    }
+  }
+
+  &:nth-child(2n) {
+    @include mq(to768) {
+      margin-right: 0;
+    }
+  }
+
+  .article-title {
+    font-weight: 300;
+    font-family: 'SlimPlay', sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .article-header {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 150px;
+    overflow: hidden;
+
+    .inner {
+      position: relative;
+      transform: translateY(-50px);
+      transition: transform 0.5s ease;
+    }
+
+    h2 {
+      height: 50px;
+      line-height: 50px;
+      margin: 0;
+      padding: 0 20px;
+      background: black;
+      color: white;
+      font-weight: 300;
+      font-size: 12px;
+      font-family: 'SlimPlay', sans-serif;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .article-body {
+    position: relative;
+    padding: 20px;
+
+    h1 {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    span {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 10px;
+      background: $curiousBlue;
+      color: $white;
+      font-weight: 400;
+      opacity: 0;
+      font-size: 14px;
+      transition: all 500ms ease;
+      font-family: 'SlimPlay', sans-serif;
+    }
+  }
+
+  &:hover {
+    .inner {
+      transform: translateY(0);
+    }
+
+    .article-body {
+      span {
+        opacity: 1;
+      }
+    }
+  }
+
+  // @include mq(to768) {
+  //   display: inline-block;
+  //   max-width: 50%;
+  //   margin-right: 10px;
+  //
+  //   article:nth-child(2n) {
+  //     margin-right: 0;
+  //   }
+  //
+  //   &:nth-child(3n) {
+  //     margin-right: 10px;
+  //   }
+  // }
+  //
+  // @include mq(to550) {
+  //   display: block;
+  //   max-width: 100%;
+  // }
+}

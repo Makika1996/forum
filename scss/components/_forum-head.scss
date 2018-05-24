@@ -1,0 +1,56 @@
+.forum-head {
+  display: flex;
+  justify-content: space-between;
+
+  select {
+    background-color: $curiousBlue;
+    color: $white;
+    font-size: 15px;
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px 0;
+
+    &:active {
+      outline: none;
+      background-color: $endeavour;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: $curiousBlue;
+    color: $white;
+    font-size: 15px;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: $endeavour;
+    }
+
+    &.last {
+      background-color: $curiousBlue;
+      color: $white;
+      font-size: 15px;
+      width: 120px;
+      height: 30px;
+      border-radius: 10px;
+      margin: 10px 0;
+
+      &:hover {
+        background-color: $endeavour;
+      }
+    }
+  }
+}
