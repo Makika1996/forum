@@ -713,12 +713,10 @@ form.create-new-topic-form {
       background-color: #fff; }
 
 .about h1 {
-  color: #fff;
+  color: #225A94;
   text-transform: uppercase;
-  margin-bottom: 20px; }
-
-.about p {
-  color: #fff; }
+  margin-bottom: 16px;
+  font-family: 'SlimPlay', sans-serif; }
 
 .topic-list {
   width: 100%; }
