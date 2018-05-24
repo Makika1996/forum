@@ -8,6 +8,11 @@
 body {
   font-size: 14px;
   font-family: 'Helvetica', sans-serif;
+  background-image: url('../images/ps4.png');
+  background-position: top right;
+  background-attachment: fixed;
+  padding-bottom: 50px;
+  // background-size: contain;
 }
 
 .container {
