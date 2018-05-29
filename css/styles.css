@@ -492,6 +492,9 @@ a {
     background: none;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 767px) {
+      .nav-wrap .container {
+        margin-bottom: 15px; } }
     .nav-wrap .container .nav-open-link i {
       color: #fff;
       font-size: 30px; }
@@ -501,8 +504,15 @@ a {
 
 #fancy-nav {
   position: relative; }
-  #fancy-nav.opened {
-    display: block; }
+  @media only screen and (max-width: 767px) {
+    #fancy-nav.opened {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   @media only screen and (max-width: 767px) {
     #fancy-nav {
       display: none;
@@ -524,6 +534,10 @@ a {
       text-transform: uppercase;
       padding: 0.6em 1em 0.3em;
       font-family: 'SlimPlay', sans-serif; }
+      @media only screen and (max-width: 767px) {
+        #fancy-nav li a {
+          width: 100%;
+          text-align: center; } }
       #fancy-nav li a:hover {
         color: white; }
   #fancy-nav #magic-line-two {
@@ -635,6 +649,12 @@ article {
   display: -ms-flexbox;
   display: flex;
   background: #fff; }
+  @media only screen and (max-width: 767px) {
+    .register-login-wrap {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .register-login-wrap > div {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -739,6 +759,26 @@ form.create-new-topic-form {
   .topic-list .topic-post-badges {
     color: green;
     font-weight: bold; }
+
+.contact textarea {
+  padding: 10px;
+  width: 100%;
+  resize: none;
+  background: #F1F1F1; }
+
+.contact button {
+  background-color: #225A94;
+  color: #fff;
+  font-size: 15px;
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer; }
+  .contact button:focus {
+    outline: none; }
+  .contact button:hover {
+    background-color: #3D82B8; }
 
 .input-group {
   margin: 5px 0 22px; }

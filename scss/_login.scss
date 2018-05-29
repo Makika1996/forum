@@ -8,6 +8,10 @@
   display: flex;
   background: $white;
 
+  @include mq(to768) {
+    flex-direction: column;
+  }
+
   //select only childs
   > div {
     flex: 1;
