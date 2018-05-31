@@ -692,7 +692,7 @@ form.create-new-topic-form {
     font-size: 15px;
     text-align: center;
     width: 130px;
-    height: 30px;
+    height: 130px;
     border-radius: 5px;
     margin: 10px 0; }
     form.create-new-topic-form select:active {
@@ -789,9 +789,9 @@ form.create-new-topic-form {
     .topic-list tbody .topic-list-item td:nth-child(1):before {
       margin-bottom: 15px; } }
   .topic-list tbody .topic-list-item td:before {
-    content: attr(data-col-name) ": ";
-    font-weight: bold;
-    width: 100px; }
+    content: attr(data-col-name);
+    font-family: 'SlimPlay', sans-serif;
+    width: 130px; }
     @media only screen and (min-width: 992px) {
       .topic-list tbody .topic-list-item td:before {
         display: none; } }
@@ -858,6 +858,9 @@ form.create-new-topic-form {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media only screen and (max-width: 991px) {
+    .forum-head {
+      display: inline-block; } }
   .forum-head select {
     background-color: #3D82B8;
     color: #fff;

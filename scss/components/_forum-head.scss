@@ -1,6 +1,9 @@
 .forum-head {
   display: flex;
   justify-content: space-between;
+  @include mq(to992) {
+    display: inline-block;
+  }
 
   select {
     background-color: $curiousBlue;

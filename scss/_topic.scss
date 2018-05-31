@@ -59,9 +59,9 @@
         }
 
         &:before {
-          content: attr(data-col-name)": ";
-          font-weight: bold;
-          width: 100px;
+          content: attr(data-col-name);
+          font-family: 'SlimPlay', sans-serif;
+          width: 130px;
 
           @include mq(from992) {
             display: none;
